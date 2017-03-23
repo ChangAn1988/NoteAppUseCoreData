@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		007457EE1E4ECB600077C86D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007457ED1E4ECB600077C86D /* AppDelegate.swift */; };
-		007457F01E4ECB600077C86D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007457EF1E4ECB600077C86D /* ViewController.swift */; };
 		007457F31E4ECB600077C86D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 007457F11E4ECB600077C86D /* Main.storyboard */; };
 		007457F51E4ECB600077C86D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 007457F41E4ECB600077C86D /* Assets.xcassets */; };
 		007457F81E4ECB600077C86D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 007457F61E4ECB600077C86D /* LaunchScreen.storyboard */; };
+		007458001E4ECBE30077C86D /* NoteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007457FF1E4ECBE30077C86D /* NoteListViewController.swift */; };
+		007458021E4ECD8B0077C86D /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007458011E4ECD8B0077C86D /* Note.swift */; };
+		00A0450D1E837B3600470321 /* NoteApp的MVC.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A0450C1E837B3600470321 /* NoteApp的MVC.png */; };
+		00A045121E83826900470321 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A045111E83826900470321 /* NoteViewController.swift */; };
+		00A045151E83BBB700470321 /* NoteModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00A045131E83BBB700470321 /* NoteModel.xcdatamodeld */; };
+		00A045171E83BDA400470321 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A045161E83BDA400470321 /* CoreDataHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		007457EA1E4ECB600077C86D /* NoteAppForSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteAppForSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		007457ED1E4ECB600077C86D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		007457EF1E4ECB600077C86D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		007457F21E4ECB600077C86D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		007457F41E4ECB600077C86D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		007457F71E4ECB600077C86D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		007457F91E4ECB600077C86D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		007457FF1E4ECBE30077C86D /* NoteListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteListViewController.swift; sourceTree = "<group>"; };
+		007458011E4ECD8B0077C86D /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		00A0450C1E837B3600470321 /* NoteApp的MVC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NoteApp的MVC.png"; sourceTree = "<group>"; };
+		00A045111E83826900470321 /* NoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
+		00A045141E83BBB700470321 /* NoteModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NoteModel.xcdatamodel; sourceTree = "<group>"; };
+		00A045161E83BDA400470321 /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +65,42 @@
 			isa = PBXGroup;
 			children = (
 				007457ED1E4ECB600077C86D /* AppDelegate.swift */,
-				007457EF1E4ECB600077C86D /* ViewController.swift */,
+				00A0450E1E837B7A00470321 /* Model */,
+				00A0450F1E837B9400470321 /* View */,
+				00A045101E837BBF00470321 /* Controller */,
 				007457F11E4ECB600077C86D /* Main.storyboard */,
 				007457F41E4ECB600077C86D /* Assets.xcassets */,
 				007457F61E4ECB600077C86D /* LaunchScreen.storyboard */,
 				007457F91E4ECB600077C86D /* Info.plist */,
+				00A0450C1E837B3600470321 /* NoteApp的MVC.png */,
+				00A045131E83BBB700470321 /* NoteModel.xcdatamodeld */,
+				00A045161E83BDA400470321 /* CoreDataHelper.swift */,
 			);
 			path = NoteAppForSwift;
+			sourceTree = "<group>";
+		};
+		00A0450E1E837B7A00470321 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				007458011E4ECD8B0077C86D /* Note.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		00A0450F1E837B9400470321 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		00A045101E837BBF00470321 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				007457FF1E4ECBE30077C86D /* NoteListViewController.swift */,
+				00A045111E83826900470321 /* NoteViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +166,7 @@
 				007457F81E4ECB600077C86D /* LaunchScreen.storyboard in Resources */,
 				007457F51E4ECB600077C86D /* Assets.xcassets in Resources */,
 				007457F31E4ECB600077C86D /* Main.storyboard in Resources */,
+				00A0450D1E837B3600470321 /* NoteApp的MVC.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +177,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				007457F01E4ECB600077C86D /* ViewController.swift in Sources */,
+				00A045171E83BDA400470321 /* CoreDataHelper.swift in Sources */,
+				00A045121E83826900470321 /* NoteViewController.swift in Sources */,
 				007457EE1E4ECB600077C86D /* AppDelegate.swift in Sources */,
+				00A045151E83BBB700470321 /* NoteModel.xcdatamodeld in Sources */,
+				007458001E4ECBE30077C86D /* NoteListViewController.swift in Sources */,
+				007458021E4ECD8B0077C86D /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +307,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QUGRN27H3U;
 				INFOPLIST_FILE = NoteAppForSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = changan.chen.NoteAppForSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -276,6 +321,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QUGRN27H3U;
 				INFOPLIST_FILE = NoteAppForSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = changan.chen.NoteAppForSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,8 +348,22 @@
 				007457FE1E4ECB600077C86D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		00A045131E83BBB700470321 /* NoteModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				00A045141E83BBB700470321 /* NoteModel.xcdatamodel */,
+			);
+			currentVersion = 00A045141E83BBB700470321 /* NoteModel.xcdatamodel */;
+			path = NoteModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 007457E21E4ECB600077C86D /* Project object */;
 }
