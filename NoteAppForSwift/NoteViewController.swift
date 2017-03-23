@@ -33,7 +33,10 @@ class NoteViewController: UIViewController,UIImagePickerControllerDelegate,UINav
         self.textView.text = self.note?.text
         self.imageView.image = self.note?.image()
         
+        //Autolayout - Remove at build time
+        let ratioConstraint = NSLayoutConstraint(item: self.imageView, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: self.imageView, attribute: NSLayoutAttribute.width, multiplier: 0.75, constant: 0)
         
+        ratioConstraint.isActive = true
     }
     
     //MARK: IBAction
